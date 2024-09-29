@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplos de Selectores, Box Model, Colores y más</title>
+    <link rel="stylesheet" href="Estilo.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Ejemplos de CSS: Selectores, Box Model, Colores y más</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Selectores</h2>
+        <p>
+          Un selector es una regla de CSS utilizada para seleccionar elementos
+          HTML y aplicarles estilos. A continuación, se presentan diferentes
+          tipos de selectores:
+        </p>
+
+        <h3>1. Descendencia</h3>
+        <p class="example">
+          Un selector de descendencia aplica estilos a un elemento solo si está
+          dentro de otro. Ejemplo:
+        </p>
+        <div class="parent">
+          <p>Este es un <strong>párrafo hijo</strong> dentro de un div.</p>
+        </div>
+
+        <h3>2. Selectores Básicos</h3>
+        <ul>
+          <li>
+            <strong>Selector de etiqueta:</strong> aplica estilos a todas las
+            instancias de una etiqueta específica. Ejemplo: el selector `p`
+            aplica estilos a todos los párrafos.
+          </li>
+          <li>
+            <strong>Selector de clase:</strong> aplica estilos a los elementos
+            con una clase específica. Ejemplo: `.example` aplica estilos a los
+            elementos con esa clase.
+          </li>
+          <li>
+            <strong>Selector de id:</strong> aplica estilos a un elemento con un
+            id específico. Ejemplo: `#unique` aplica estilos a un elemento con
+            id="unique".
+          </li>
+        </ul>
+
+        <h3>3. Selectores de atributo</h3>
+        <p class="example">
+          Los selectores de atributo permiten seleccionar elementos en función
+          de sus atributos. Ejemplo:
+        </p>
+        <a href="https://example.com" target="_blank"
+          >Enlace con target="_blank"</a
+        >
+        <input type="text" placeholder="Campo de texto" />
+        <img src="imagen.jpg" alt="Descripción de la imagen" />
+        <button disabled>Botón deshabilitado</button>
+
+        <h3>4. Selectores Combinados</h3>
+        <p class="example">
+          Los selectores combinados permiten seleccionar elementos en función de
+          múltiples condiciones. Ejemplo: el selector `div p` selecciona todos
+          los párrafos dentro de un div.
+        </p>
+      </section>
+
+      <section>
+        <h2>Modelo de Caja (Box Model)</h2>
+        <p>
+          El modelo de caja define cómo se representan los elementos en la web,
+          considerando márgenes, bordes, relleno (padding) y el contenido.
+        </p>
+
+        <h3>1. Margin</h3>
+        <div class="margin-example">Elemento con márgenes.</div>
+
+        <h3>2. Margin en formato abreviado</h3>
+        <div class="shorthand-margin-example">Ejemplo de margen abreviado</div>
+
+        <h3>3. Colapso de márgenes</h3>
+        <div class="collapse-margin-example">
+          Ejemplo de colapso de márgenes
+        </div>
+
+        <h3>4. Padding y Border</h3>
+        <div class="padding-border-example">
+          Elemento con relleno (padding) y borde
+        </div>
+      </section>
+
+      <section>
+        <h2>Especificidad, Herencia y Cascada</h2>
+        <p>
+          Los estilos en CSS siguen una jerarquía basada en la especificidad, la
+          cascada y la herencia de propiedades.
+        </p>
+
+        <h3>1. Tipos de Elementos</h3>
+        <p>
+          Ejemplo de distintos tipos de elementos y su comportamiento
+          predeterminado en CSS.
+        </p>
+
+        <h3>2. Cascada y Especificidad</h3>
+        <p>
+          La especificidad determina qué estilo se aplica cuando múltiples
+          estilos afectan al mismo elemento.
+        </p>
+
+        <h3>3. Herencia</h3>
+        <p>
+          La herencia en CSS significa que ciertos estilos se transfieren de un
+          elemento padre a sus hijos. Ejemplo de color heredado.
+        </p>
+      </section>
+
+      <section>
+        <h2>Bordes</h2>
+        <h3>1. Bordes</h3>
+        <div class="border-example">Ejemplo de borde simple</div>
+
+        <h3>2. Bordes con radio (bordes redondeados)</h3>
+        <div class="border-radius-example">Ejemplo de bordes redondeados</div>
+
+        <h3>
+          3. Sombra de caja (box-shadow) y sombra proyectada (drop shadow)
+        </h3>
+        <div class="box-shadow-example">Ejemplo de sombra de caja</div>
+      </section>
+
+      <section>
+        <h2>Colores</h2>
+        <h3>1. Colores RGB</h3>
+        <div class="rgb-color">Este texto utiliza color RGB.</div>
+
+        <h3>2. Colores Hexadecimales</h3>
+        <div class="hex-color">Este texto utiliza color hexadecimal.</div>
+
+        <h3>3. Colores HSL</h3>
+        <div class="hsl-color">Este texto utiliza color HSL.</div>
+      </section>
+
+      <section>
+        <h2>Fondos y Gradientes</h2>
+        <h3>1. Propiedad Background</h3>
+        <div class="background-example">
+          Este div tiene una imagen de fondo.
+        </div>
+
+        <h3>2. Posición y tamaño del fondo</h3>
+        <div class="background-position-size">
+          Ejemplo de posición y tamaño del fondo.
+        </div>
+
+        <h3>3. Gradientes</h3>
+        <div class="gradient-example">Ejemplo de gradiente de colores.</div>
+      </section>
+
+      <section>
+        <h2>Textos</h2>
+        <h3>1. Tamaños y Fuentes</h3>
+        <p class="font-size-example">
+          Este texto tiene un tamaño y una fuente específicos.
+        </p>
+      </section>
+
+      <section>
+        <h2>Unidades de Medida</h2>
+        <h3>1. REM y EM</h3>
+        <p class="rem-example">Este texto utiliza unidades REM.</p>
+        <p class="em-example">Este texto utiliza unidades EM.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Fin investigacion de HTML y CSS</p>
+    </footer>
+  </body>
+</html>
